@@ -6,6 +6,8 @@ function Timer() {
   const [start, setStart] = useState(false);
   const [timerStartValue, setTimerStartValue] = useState(10);
 
+  console.log('Timer rendered')
+
   useEffect(() => {
     setCount(timerStartValue);
   }, [timerStartValue]);
@@ -15,9 +17,11 @@ function Timer() {
     let interval;
     if (start) {
       interval = setInterval(() => {
-        if (count - 1 < 0) {
-          alert('You have reached 0');
-          return;
+        if (count-1 < 0) {
+          alert('You have reached to 0');
+          setCount(timerStartValue)
+          setStart(false)
+          return
         }
         setCount((count) => count - 1);
       }, 1000);
@@ -26,7 +30,7 @@ function Timer() {
       console.log('return invoked');
       clearInterval(interval);
     };
-  }, [start]);
+  }, [start, count]); // if we use count, it re-renders the effect upon each countdown, new interval will be created, hence cleaning up is required
 
   const startHandler = () => {
     setStart((start) => !start);
