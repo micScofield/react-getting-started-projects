@@ -1,0 +1,61 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border: 1px solid gray;
+  position: relative;
+  z-index: 1;
+
+  & .nav-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .nav-link {
+      margin: 0 1rem;
+      font-size: 1.2rem;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      & .cart-icon-container {
+        position: relative;
+      }
+
+      & .shopping-icon {
+        height: 1.5rem;
+      }
+
+      & .item-count-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & .item-count {
+          position: absolute;
+          font-size: 0.9rem;
+          top: 19%;
+        }
+      }
+    }
+  }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+@supports (position: sticky) {
+  .navigation {
+    position: sticky;
+    top: calc(
+      1rem + 20px
+    ); // 1 rem as per good looking design + additional 20 px as we have specified 20px top padding for all elements in index.scss
+  }
+}
