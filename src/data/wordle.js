@@ -1,0 +1,846 @@
+export const wordleWords = [
+  'ALBUM',
+  'HINGE',
+  'MONEY',
+  'SCRAP',
+  'GAMER',
+  'GLASS',
+  'SCOUR',
+  'BEING',
+  'DELVE',
+  'YIELD',
+  'METAL',
+  'TIPSY',
+  'SLUNG',
+  'FARCE',
+  'GECKO',
+  'SHINE',
+  'CANNY',
+  'MIDST',
+  'BADGE',
+  'HOMER',
+  'TRAIN',
+  'STORY',
+  'HAIRY',
+  'FORGO',
+  'LARVA',
+  'TRASH',
+  'ZESTY',
+  'SHOWN',
+  'HEIST',
+  'ASKEW',
+  'INERT',
+  'OLIVE',
+  'PLANT',
+  'OXIDE',
+  'CARGO',
+  'FOYER',
+  'FLAIR',
+  'AMPLE',
+  'CHEEK',
+  'SHAME',
+  'MINCE',
+  'CHUNK',
+  'ROYAL',
+  'SQUAD',
+  'BLACK',
+  'STAIR',
+  'SCARE',
+  'FORAY',
+  'COMMA',
+  'NATAL',
+  'SHAWL',
+  'FEWER',
+  'TROPE',
+  'SNOUT',
+  'LOWLY',
+  'STOVE',
+  'SHALL',
+  'FOUND',
+  'NYMPH',
+  'EPOXY',
+  'DEPOT',
+  'CHEST',
+  'PURGE',
+  'SLOSH',
+  'THEIR',
+  'RENEW',
+  'ALLOW',
+  'SAUTE',
+  'MOVIE',
+  'CATER',
+  'TEASE',
+  'SMELT',
+  'FOCUS',
+  'TODAY',
+  'WATCH',
+  'LAPSE',
+  'MONTH',
+  'SWEET',
+  'HOARD',
+  'CLOTH',
+  'BRINE',
+  'AHEAD',
+  'MOURN',
+  'NASTY',
+  'RUPEE',
+  'CHOKE',
+  'CHANT',
+  'SPILL',
+  'VIVID',
+  'BLOKE',
+  'TROVE',
+  'THORN',
+  'OTHER',
+  'TACIT',
+  'SWILL',
+  'DODGE',
+  'SHAKE',
+  'CAULK',
+  'AROMA',
+  'CYNIC',
+  'ROBIN',
+  'ULTRA',
+  'ULCER',
+  'PAUSE',
+  'HUMOR',
+  'FRAME',
+  'ELDER',
+  'SKILL',
+  'ALOFT',
+  'PLEAT',
+  'SHARD',
+  'MOIST',
+  'THOSE',
+  'LIGHT',
+  'WRUNG',
+  'COULD',
+  'PERKY',
+  'MOUNT',
+  'WHACK',
+  'SUGAR',
+  'KNOLL',
+  'CRIMP',
+  'WINCE',
+  'PRICK',
+  'ROBOT',
+  'POINT',
+  'PROXY',
+  'SHIRE',
+  'SOLAR',
+  'PANIC',
+  'TANGY',
+  'ABBEY',
+  'FAVOR',
+  'DRINK',
+  'QUERY',
+  'GORGE',
+  'CRANK',
+  'SLUMP',
+  'BANAL',
+  'TIGER',
+  'SIEGE',
+  'TRUSS',
+  'BOOST',
+  'REBUS',
+  'UNIFY',
+  'TROLL',
+  'TAPIR',
+  'ASIDE',
+  'FERRY',
+  'ACUTE',
+  'PICKY',
+  'WEARY',
+  'GRIPE',
+  'CRAZE',
+  'PLUCK',
+  'BRAKE',
+  'BATON',
+  'CHAMP',
+  'PEACH',
+  'USING',
+  'TRACE',
+  'VITAL',
+  'SONIC',
+  'MASSE',
+  'CONIC',
+  'VIRAL',
+  'RHINO',
+  'BREAK',
+  'TRIAD',
+  'EPOCH',
+  'USHER',
+  'EXULT',
+  'GRIME',
+  'CHEAT',
+  'SOLVE',
+  'BRING',
+  'PROVE',
+  'STORE',
+  'TILDE',
+  'CLOCK',
+  'WROTE',
+  'RETCH',
+  'PERCH',
+  'ROUGE',
+  'RADIO',
+  'SURER',
+  'FINER',
+  'VODKA',
+  'HERON',
+  'CHILL',
+  'GAUDY',
+  'PITHY',
+  'SMART',
+  'BADLY',
+  'ROGUE',
+  'GROUP',
+  'FIXER',
+  'GROIN',
+  'DUCHY',
+  'COAST',
+  'BLURT',
+  'PULPY',
+  'ALTAR',
+  'GREAT',
+  'BRIAR',
+  'CLICK',
+  'GOUGE',
+  'WORLD',
+  'ERODE',
+  'BOOZY',
+  'DOZEN',
+  'FLING',
+  'GROWL',
+  'ABYSS',
+  'STEED',
+  'ENEMA',
+  'JAUNT',
+  'COMET',
+  'TWEED',
+  'PILOT',
+  'DUTCH',
+  'BELCH',
+  'OUGHT',
+  'DOWRY',
+  'THUMB',
+  'HYPER',
+  'HATCH',
+  'ALONE',
+  'MOTOR',
+  'ABACK',
+  'GUILD',
+  'KEBAB',
+  'SPEND',
+  'FJORD',
+  'ESSAY',
+  'SPRAY',
+  'SPICY',
+  'AGATE',
+  'SALAD',
+  'BASIC',
+  'MOULT',
+  'CORNY',
+  'FORGE',
+  'CIVIC',
+  'ISLET',
+  'LABOR',
+  'GAMMA',
+  'LYING',
+  'AUDIT',
+  'ROUND',
+  'LOOPY',
+  'LUSTY',
+  'GOLEM',
+  'GONER',
+  'GREET',
+  'START',
+  'LAPEL',
+  'BIOME',
+  'PARRY',
+  'SHRUB',
+  'FRONT',
+  'WOOER',
+  'TOTEM',
+  'FLICK',
+  'DELTA',
+  'BLEED',
+  'ARGUE',
+  'SWIRL',
+  'ERROR',
+  'AGREE',
+  'OFFAL',
+  'FLUME',
+  'CRASS',
+  'PANEL',
+  'STOUT',
+  'BRIBE',
+  'DRAIN',
+  'YEARN',
+  'PRINT',
+  'SEEDY',
+  'IVORY',
+  'BELLY',
+  'STAND',
+  'FIRST',
+  'FORTH',
+  'BOOBY',
+  'FLESH',
+  'UNMET',
+  'LINEN',
+  'MAXIM',
+  'POUND',
+  'MIMIC',
+  'SPIKE',
+  'CLUCK',
+  'CRATE',
+  'DIGIT',
+  'REPAY',
+  'SOWER',
+  'CRAZY',
+  'ADOBE',
+  'OUTDO',
+  'TRAWL',
+  'WHELP',
+  'UNFED',
+  'PAPER',
+  'STAFF',
+  'CROAK',
+  'HELIX',
+  'FLOSS',
+  'PRIDE',
+  'BATTY',
+  'REACT',
+  'MARRY',
+  'ABASE',
+  'COLON',
+  'STOOL',
+  'CRUST',
+  'FRESH',
+  'DEATH',
+  'MAJOR',
+  'FEIGN',
+  'ABATE',
+  'BENCH',
+  'QUIET',
+  'GRADE',
+  'STINK',
+  'KARMA',
+  'MODEL',
+  'DWARF',
+  'HEATH',
+  'SERVE',
+  'NAVAL',
+  'EVADE',
+  'FOCAL',
+  'BLUSH',
+  'AWAKE',
+  'HUMPH',
+  'SISSY',
+  'REBUT',
+  'CIGAR',
+];
+
+const x = `aba
+abs
+ace
+act
+add
+ado
+aft
+age
+ago
+aha
+aid
+aim
+air
+ala
+ale
+all
+alt
+amp
+ana
+and
+ant
+any
+ape
+app
+apt
+arc
+are
+ark
+arm
+art
+ash
+ask
+asp
+ass
+ate
+ave
+awe
+axe
+aye
+BAA
+bad
+bag
+ban
+bar
+bat
+bay
+bed
+bee
+beg
+bel
+ben
+bet
+bid
+big
+bin
+bio
+bis
+bit
+biz
+bob
+bog
+boo
+bow
+box
+boy
+bra
+bud
+Bug
+bum
+bun
+bus
+but
+buy
+bye
+cab
+cad
+cam
+can
+cap
+car
+cat
+chi
+cob
+cod
+col
+con
+coo
+cop
+cor
+cos
+cot
+cow
+cox
+coy
+cry
+cub
+cue
+cum
+cup
+cut
+dab
+dad
+dal
+dam
+dan
+day
+Dee
+def
+del
+den
+dew
+did
+die
+dig
+dim
+din
+dip
+dis
+doc
+doe
+dog
+don
+dot
+dry
+dub
+due
+dug
+dun
+duo
+dye
+ear
+eat
+ebb
+ecu
+eft
+egg
+ego
+elf
+elm
+emu
+end
+era
+eta
+eve
+eye
+fab
+fad
+fan
+far
+fat
+fax
+fay
+fed
+fee
+fen
+few
+fig
+fin
+fir
+fit
+fix
+flu
+fly
+foe
+fog
+for
+fox
+fry
+fun
+fur
+gag
+gal
+gap
+gas
+gay
+gee
+gel
+gem
+get
+gig
+gin
+god
+got
+gum
+gun
+gut
+guy
+gym
+had
+ham
+has
+hat
+hay
+hem
+hen
+her
+hey
+hid
+him
+hip
+his
+hit
+hog
+hon
+hop
+hot
+how
+hub
+hue
+hug
+huh
+hum
+hut
+ice
+icy
+igg
+ill
+imp
+ink
+inn
+ion
+its
+ivy
+jam
+jar
+jaw
+jay
+jet
+jew
+job
+joe
+jog
+joy
+jug
+jun
+kay
+ken
+key
+kid
+kin
+kit
+lab
+lac
+lad
+lag
+lam
+lap
+law
+lax
+lay
+lea
+led
+Lee
+leg
+les
+let
+lib
+lid
+lie
+lip
+lit
+log
+lot
+low
+mac
+mad
+mag
+man
+map
+mar
+mas
+mat
+max
+may
+med
+meg
+men
+Met
+mid
+mil
+mix
+mob
+mod
+mol
+mom
+mon
+mop
+mot
+mud
+mug
+mum
+nab
+nah
+nan
+nap
+nay
+neb
+neg
+net
+new
+nil
+nip
+nod
+nor
+nos
+not
+now
+nun
+nut
+oak
+odd
+off
+oft
+oil
+old
+ole
+one
+ooh
+opt
+orb
+ore
+our
+out
+owe
+owl
+own
+pac
+pad
+pal
+pam
+pan
+pap
+par
+pas
+pat
+paw
+pay
+pea
+peg
+pen
+pep
+per
+pet
+pew
+phi
+pic
+pie
+pig
+pin
+pip
+pit
+ply
+pod
+pol
+pop
+pot
+pro
+psi
+pub
+pup
+put
+rad
+rag
+raj
+ram
+ran
+rap
+rat
+raw
+ray
+red
+ref
+reg
+rem
+rep
+rev
+rib
+rid
+rig
+rim
+rip
+rob
+rod
+roe
+rot
+row
+rub
+rue
+rug
+rum
+run
+rye
+sab
+sac
+sad
+sae
+sag
+sal
+sap
+sat
+saw
+say
+sea
+sec
+see
+sen
+set
+sew
+sex
+she
+shy
+sic
+sim
+sin
+sip
+sir
+sis
+sit
+six
+ski
+sky
+sly
+sod
+sol
+son
+sow
+soy
+spa
+spy
+sub
+sue
+sum
+sun
+sup
+tab
+tad
+tag
+tam
+tan
+tap
+tar
+tat
+tax
+tea
+ted
+tee
+ten
+the
+thy
+tie
+tin
+tip
+tod
+toe
+tom
+ton
+too
+top
+tor
+tot
+tow
+toy
+try
+tub
+tug
+two
+use
+van
+vat
+vet
+via
+vie
+vow
+wan
+war
+was
+wax
+way
+web
+wed
+wee
+wet
+who
+why
+wig
+win
+wis
+wit
+won
+woo
+wow
+wry
+wye
+yen
+yep
+yes
+yet
+you
+zip
+zoo`
+
+const wordle3LetterWords = x.split('\n')
+export const words = wordle3LetterWords.map(word => word.toUpperCase())

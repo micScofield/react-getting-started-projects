@@ -1,11 +1,13 @@
 import React from 'react';
 import 'h8k-components';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import Timer from './components/Timer';
+import Timer from './components/Timer/Timer';
 import Dashboard from './components/Dashboard';
-import LeaderBoard from './components/LeaderBoard';
+import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 import NavigationBar from './components/common/navigation-bar/NavigationBar';
 import { ReactComponent as Logo } from './assets/crown.svg';
+import Wordle from './components/Wordle/Wordle';
+import ThreeLetterWordle from './components/Wordle/3LetterWordle';
 
 // box shadow - 0 4px 12px rgba(27, 169, 76, 0.5);
 
@@ -26,6 +28,8 @@ function App() {
       <Switch>
         <Route path='/leaderboard' component={LeaderBoard} />
         <Route path='/timer' component={Timer} />
+        <Route path='/wordle' component={Wordle} />
+        <Route path='/3-letter-wordle' component={ThreeLetterWordle} />
         <Route path='/' component={Dashboard} />
       </Switch>
     </div>

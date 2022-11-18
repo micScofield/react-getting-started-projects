@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { response } from '../data/response';
-import Button from './common/button/Button';
+import { response } from '../../data/response';
+import Button from '../common/button/Button';
 
 const SORT_ORDER = {
   RANK: 'rank',
