@@ -77,35 +77,33 @@ const SearchBarDashboard = () => {
 
   return (
     <Fragment>
-      <div className='container mt-5'>
-        <div className='row'>
-          <div className='col md-6 m-auto'>
-            <Button text='Debouncing' onClick={() => setUseThrottling(false)} />
-            <Button text='Throttling' onClick={() => setUseThrottling(true)} />
-            <div className='mb-4'></div>
+      <div className='text-center mt-50'>
+        <Button text='Debouncing' onClick={() => setUseThrottling(false)} />
+        <Button text='Throttling' onClick={() => setUseThrottling(true)} />
 
-            <h4 className='text-center mb-4' style={{color: 'black'}}>
-              { useThrottling ? 'Throttling' : 'Debouncing' } with React
-            </h4>
+        <h2 style={{ color: 'black' }}>
+          {useThrottling ? 'Throttling' : 'Debouncing'} with React
+        </h2>
 
-            <div className='form-group'>
-              <input
-                type='text'
-                id='search'
-                value={searchTerm}
-                className='form-control form-control-lg'
-                style={{border: '2px solid rgba(27, 169, 76, 0.5)'}}
-                placeholder='Search for posts with ID (1 to 100)'
-                data-id='postId'
-                onChange={(e) => searchBoxChangeHandler(e, 'postId')}
-              />
-            </div>
-
-            {showMatches && matches && matches.length !== 0 && (
-              <MatchResults matches={matches} clickHandler={() => {}} />
-            )}
-          </div>
+        <div>
+          <input
+            type='text'
+            id='search'
+            value={searchTerm}
+            style={{
+              border: '2px solid rgba(27, 169, 76, 0.5)',
+              width: '70%',
+              padding: '0.25rem',
+            }}
+            placeholder='Search for posts with ID (1 to 100)'
+            data-id='postId'
+            onChange={(e) => searchBoxChangeHandler(e, 'postId')}
+          />
         </div>
+
+        {showMatches && matches && matches.length !== 0 && (
+          <MatchResults matches={matches} clickHandler={() => {}} />
+        )}
       </div>
     </Fragment>
   );

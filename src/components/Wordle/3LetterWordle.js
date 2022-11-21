@@ -156,7 +156,6 @@ function ThreeLetterWordle() {
       ))}
       <div className='mb-20'></div>
       <h3>{solution}</h3>
-      <div className='mb-20'></div>
       {gameover && (
         <div>
           <h3 style={{ textAlign: 'center' }}>You WIN !!!</h3>
