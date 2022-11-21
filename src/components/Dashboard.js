@@ -15,6 +15,7 @@ function Dashboard({ history }) {
       <Button text='Timer' onClick={() => history.push('/timer')} />
       <Button text='5-Letter Wordle' onClick={() => history.push('/wordle')} />
       <Button text='3-Letter Wordle' onClick={() => history.push('/3-letter-wordle')} />
+      <Button text='Search Bar' onClick={() => history.push('/searchbar')} />
     </div>
   );
 }

@@ -9,6 +9,10 @@ import { ReactComponent as Logo } from './assets/crown.svg';
 import Wordle from './components/Wordle/Wordle';
 import ThreeLetterWordle from './components/Wordle/3LetterWordle';
 
+// CSS for search bar app
+import './bootstrap.min.css';
+import SearchBarDashboard from './components/SearchBar/Dashboard';
+
 // box shadow - 0 4px 12px rgba(27, 169, 76, 0.5);
 
 function App() {
@@ -30,6 +34,7 @@ function App() {
         <Route path='/timer' component={Timer} />
         <Route path='/wordle' component={Wordle} />
         <Route path='/3-letter-wordle' component={ThreeLetterWordle} />
+        <Route path='/searchbar' component={SearchBarDashboard} />
         <Route path='/' component={Dashboard} />
       </Switch>
     </div>
